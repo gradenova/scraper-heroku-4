@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% assets "app_css" %}
+            <link rel="stylesheet" href="{{ ASSET_URL }}" />
+        {% endassets %}
+
+        <title>
+            Mini Scraper
+        </title>
+    </head>
+
+    <body>
+        <div class='pure-g'>
+            <div class='pure-u-1-12'></div>
+
+            <div class='pure-u-20-24'>
+                <h1>
+                    {% block title %}{% endblock %}
+                </h1>
+
+                {% block main_contents %}{% endblock %}
+            </div>
+
+            <div class='pure-u-1-12'></div>
+        </div>
+
+        {% assets "app_js" %}
+            <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+        {% endassets %}
+    </body>
+</html>

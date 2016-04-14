@@ -1,0 +1,18 @@
+{% extends '_layout.html' %}
+
+{% block title %}
+    Mini Scraper
+{% endblock %}
+
+{% block main_contents %}
+    <div>
+        <a href='{{ url_for('scraper_list') }}'>
+            Scraper for List
+        </a>
+    </div>
+    <div>
+        <a href='{{ url_for('scraper_detail') }}'>
+            Scraper for detail
+        </a>
+    </div>
+{% endblock %}

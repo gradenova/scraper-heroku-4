@@ -1,0 +1,21 @@
+<form class="scrape pure-form pure-form-stacked" action="{{ url_for('scraper_list__result') }}" method="POST">
+    <fieldset>
+        <legend>Please input condition</legend>
+
+        <textarea id="urls" class="pure-input-1" rows="5" placeholder="Urls"></textarea>
+        <br>
+
+        <div id="forms">
+            <input class="pure-input-1-2" type="text" name="box_selector"    placeholder="Selector for Box">
+            <input class="pure-input-1-2" type="text" name="key_selector"    placeholder="Selector for Key">
+            <textarea class="pure-input-1" rows="3"   name="scrape_selector" placeholder="Targets"></textarea>
+
+            <br>
+
+            <button type="submit" class="pure-button pure-button-primary">Submit</button>
+        </div>
+    </fieldset>
+
+</form>
+
+<button class="open pure-button pure-button-active" style="display:none">Try with other condition</button>

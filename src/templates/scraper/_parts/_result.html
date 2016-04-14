@@ -1,0 +1,10 @@
+<br>
+
+<form class="pure-form">
+    {% set placeholder = 'Result will be displayed here.' %}
+    <textarea class="result pure-input-1" rows="20" name="result" placeholder="{{ placeholder }}"></textarea>
+</form>
+
+<div id="loading">
+    <img src="{{ url_for('static', filename='image/loading.gif') }}">
+</div>
