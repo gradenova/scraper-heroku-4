@@ -10,7 +10,7 @@ gunicorn==19.3.0
 itsdangerous==0.24
 Jinja2==2.8
 jsmin==2.1.4
-lxml==3.4.4
+lxml==4.9.1
 MarkupSafe==0.23
 mccabe==0.3.1
 pep8==1.5.7
